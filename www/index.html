@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>test</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.8.2.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.timers.js"></script>
+<script type="text/javascript" charset="utf-8">
+var audio0 = new Audio("voice/Ç∑Ç‚Ç∑Ç‚.mp3");
+var audio1 = new Audio("voice/ÇÒÅcÇ®ÇÕÇÊÇ§Ç≠Ç‹.mp3");
+var audio2 = new Audio("voice/Ç≠Ç‹Ç≠Ç‹.mp3");
+var audio3 = new Audio("voice/Ç†Ç¡ÇΩÇ©Ç¢Ç≠Ç‹.mp3");
+var audio4 = new Audio("voice/Ç´Ç‡ÇøÇ¢Ç¢Ç≠Ç‹.mp3");
+var audio5 = new Audio("voice/Ç∏Ç¡Ç∆Ç±ÇÃÇ‹Ç‹.mp3");
+var audio6 = new Audio("voice/Ç«Ç§ÇµÇΩÇ≠Ç‹ÅH.mp3");
+var audio7 = new Audio("voice/Ç‡Ç¡Ç∆Ç»Ç≈ÇƒÇŸÇµÇ¢.mp3");
+var audio8 = new Audio("voice/Ç‚ÇﬂÇƒÇ≠Ç‹.mp3");
+var audio9 = new Audio("voice/ÇÒÅ`Ç¢ÇΩÇ¢Ç≠Ç‹.mp3");
+var flg = 0;
+$(function(){
+  	$('body').keydown(function(event) {
+  	if(flg == 0){
+      switch (event.which) {
+        case 74:
+            audio1.play();
+            flg++;
+            break;
+        case 73:
+            audio3.play();	
+            flg++;
+            break;
+        case 77:
+            audio2.play();
+            flg++;
+            break;
+        case 81:
+            audio2.play();
+            flg++;
+            break;
+        default:
+            alert('You have a strange keyboard');
+      }
+    } else if(flg == 1){
+     switch (event.which) {
+        case 74:
+            audio7.play();
+            flg++;
+            break;
+        case 73:
+            audio4.play();	
+            flg++;
+            break;
+        case 77:
+            audio8.play();
+            flg++;
+            break;
+        case 81:
+            audio8.play();
+            flg++;
+            break;
+        default:
+            alert('You have a strange keyboard');
+      }
+    } else if(flg ==2){
+      switch (event.which) {
+        case 74:
+            audio6.play();
+            flg = 0;
+            break;
+        case 73:
+            audio5.play();	
+            flg = 0;
+            break;
+        case 77:
+            audio9.play();
+            flg = 0;
+            break;
+        case 81:
+            audio9.play();
+            flg = 0;
+            break;
+        default:
+            alert('You have a strange keyboard');
+      }
+    
+    }
+	});
+});
+
+</script>
+</head>
+<body>
+<div></div>
+</body>
+</html>
